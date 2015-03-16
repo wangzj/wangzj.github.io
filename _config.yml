@@ -1,0 +1,14 @@
+title: Fixed Point | WangZJ
+email: rwangzj@live.com
+description: In which i take stock of what i have done and what i am doing.
+
+url: http://localhost:4000
+
+paginate: 10
+
+markdown: kramdown
+
+owner:
+    disqus_shortname: fixedpoint
+
+exclude: ["README.md"]

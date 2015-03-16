@@ -1,0 +1,256 @@
+/**************************************
+ *        basic elements              *
+ **************************************/
+
+html {
+    font-family: 'Poly', helvetica, sans-serif;
+    font-weight: normal;
+    color: #4c4c4c;
+}
+
+body {
+    margin: 0;
+}
+
+/* Links
+ ==================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+}
+
+/**************************************
+ *             header                 *
+ **************************************/
+
+.header-wrapper {
+    //height: 350px;
+    //background-image: url(../images/cover.jpg);
+}
+
+.menu-content {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgba(26, 26, 26, 1);
+    text-align: center;
+    z-index: 5;
+}
+.menu-content hr {
+    margin: 15px 0;
+    border-top: 1px solid rgb(131, 131, 131);
+    border-bottom: 0px;
+}
+.menu-content a {
+    text-transform: uppercase;
+    -moz-osx-font-smoothing: antialiased;
+     -webkit-font-smoothing: antialiased;
+             font-smoothing: antialiased;
+    
+    letter-spacing: 1.2pt;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 35px;
+    display: block;
+    color: gray;
+}
+.menu-content a:hover {
+    color: #fff;
+}
+.menu-content > .social-links-menu {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.menu {
+    display: block;
+    cursor: pointer;
+    background-color: rgba(26, 26, 26, 0.35);
+    box-sizing: content-box;
+    width: 30px;
+    height: 30px;
+    top: 12px;
+    left: 12px;
+    padding-top: 5px;
+    padding-left: 5px;
+    z-index: 6;
+    transition-duration: .5s;
+}
+.menu a:hover {
+    -webkit-opacity: 0.75;
+            opacity: 0.75;
+}
+.menu span {
+    color: #eee;
+    font-size: 16px;
+    height: 20px;
+    width: 20px;
+    opacity: 1;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.menu + input {
+    display: none;
+}
+.menu + input + * {
+    display: none;
+}
+.menu + input:checked + * {
+    display: block;
+}
+
+.social-links {
+    width: auto;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    z-index: 2;
+}
+.social-links a {
+    opacity: 0.75;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 5px 0 5px;
+    padding: 0;
+}
+.social-links a span {
+    font-size: 24px;
+    height: 24px;
+    width: 24px;
+}
+.social-links a:hover {
+    opacity: 1;
+}
+
+/* #Media Queries
+ =================================== */
+@media only screen and (min-width: 900px) {
+    .menu-content {
+        //width: 125px;
+        top: 47px;
+        left: 12px;
+        padding-top: 5px;
+        padding-bottom: 2px;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: fixed;
+    }
+
+    .menu-title {
+        display: none;
+    }
+
+    .menu {
+        position: fixed;
+    }
+    .menu:hover, .menu:active  {
+        background-color: #1a1a1a;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+
+}
+
+/**************************************
+ *            main-content            *
+ **************************************/
+
+.content-wrapper {
+    width: 700px;
+    margin: auto;
+}
+
+.post-list .post {
+    margin: 30px 0px;
+}
+.post-list .post .post-date {
+    color: #999999;
+    font-size: 1.0em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.post-list .post .post-link {
+    margin: 0px;
+}
+.post-list .post .post-info {
+    padding-top: 1em;
+}
+
+.post-list a {
+    text-decoration:none;
+    color: #4c4c4c;
+    background-color: transparent;
+}
+
+.post-list a:active,
+.post-list a:hover {
+    text-decoration:none;
+    color: #999999;
+}
+
+/**************************************
+ *             footer                 *
+ **************************************/
+
+.footer-wrapper {
+    //background-image: url(../images/cover.jpg);
+    //background-position: 0px -350px;
+    //height: 60px;
+}
+
+.footer-wrapper .copyright {
+    color: #555555;
+    text-align: center;
+}
+
+/**************************************
+ *              post                  *
+ **************************************/
+
+.meta-wrapper {
+    //background-image: url(../images/3397b59b9b7524b8e8d29635f88159b7.jpg);
+    //background-position: 0px -350px;
+    //height: 200px;
+    width: 100%;
+    float: left;
+}
+
+.meta-wrapper .post-meta {
+    width: 700px;
+    margin: auto;
+}
+
+.meta-wrapper .post-meta h1 {
+    color: white;
+}
+
+.meta-wrapper .post-meta .post-date {
+    display: inline-block;
+    padding: 8px 0px;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    color: white;
+}
+
+.post-wrapper{
+    display: inline-block;
+    margin-top: 1.5em;
+}
+
+.comments-wrapper {
+    width: inherit;
+    margin-top: 40px !important;
+    margin-bottom: 40px;
+}
