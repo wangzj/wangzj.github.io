@@ -52,7 +52,7 @@ than using `pip` command.
         }
     }
 
-####Reference
+#### Reference
 
 [[1][python]] https://github.com/h2oai/h2o/wiki/Installing-python-2.7-on-centos-6.3.-Follow-this-sequence-exactly-for-centos-machine-only <br>
 [[2][psycopg2]] http://www.stickpeople.com/projects/python/win-psycopg/

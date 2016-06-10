@@ -1,14 +1,17 @@
-title: Fixed Point | WangZJ
+title: WangZJ
 email: rwangzj@live.com
 description: In which i take stock of what i have done and what i am doing.
 
-url: http://localhost:4000
+url: http://wangzj.github.io
 
 paginate: 10
 
+highlighter: pygments
 markdown: kramdown
 
 owner:
     disqus_shortname: fixedpoint
+
+gems: [jekyll-paginate]
 
 exclude: ["README.md"]
