@@ -34,11 +34,6 @@ a:hover {
  *             header                 *
  **************************************/
 
-.header-wrapper {
-    //height: 350px;
-    //background-image: url(../images/cover.jpg);
-}
-
 .menu-content {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: rgba(26, 26, 26, 1);
