@@ -2,8 +2,10 @@
 layout: post
 title: "Configure Django with Postgresql"
 date: 2015-01-09 11:47:25
-categories: Python
+category: Python
 imageuri: 3397b59b9b7524b8e8d29635f88159b7.jpg
+image:
+  feature: 3397b59b9b7524b8e8d29635f88159b7.jpg
 ---
 
 ### Requirements
@@ -16,6 +18,8 @@ We first upgrade python to version of 2.7. Following the instructions in
 But before performing this command, we should install the dependencies:
 
     $ yum -y install openssl-devel
+
+<!--more-->
 
 Setuptools and pip are always helpful.
 

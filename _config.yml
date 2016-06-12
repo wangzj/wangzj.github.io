@@ -1,17 +1,20 @@
-title: WangZJ
+# Site settings
+title: Simple, Clear and Logical
 email: rwangzj@live.com
 description: In which i take stock of what i have done and what i am doing.
-
+baseurl: ""
 url: http://wangzj.github.io
+twitter_username: nil
+github_username: wangzj
+owner:
+  disqus_shortname: fixedpoint
 
-paginate: 10
-
-highlighter: pygments
+# Build settings
 markdown: kramdown
 
-owner:
-    disqus_shortname: fixedpoint
-
+paginate: 10
 gems: [jekyll-paginate]
+
+excerpt_separator: "<!--more-->"
 
 exclude: ["README.md"]

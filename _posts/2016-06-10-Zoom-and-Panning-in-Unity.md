@@ -2,8 +2,10 @@
 layout: post
 title: "如何实现缩放和平移"
 date: 15:03:54
-categories: unity
+category: unity
 imageuri: pinch_to_zoom.jpg
+image:
+  feature: pinch_to_zoom.jpg
 ---
 
 假设在场景里放入了一张大地图，地图的尺寸超过了设备屏幕的大小。通过平移(panning)
@@ -14,6 +16,8 @@ imageuri: pinch_to_zoom.jpg
 
 和普通的拖拽不同，平移不会改变地图上各个对象的坐标位置。只要控制镜头的位置，可以
 在屏幕上显示观察的区域。下面我们用脚本实现[[1][ZOOM]]。
+
+<!--more-->
 
 {% highlight c# %}
 
@@ -106,11 +110,8 @@ void Update () {
 
 在移动设备上，通过捏合和拉开手指的触摸手势，实现缩小和放大。[[2][PINCH-ZOOM]]
 
-
-### 材料
-
-[[1][ZOOM]] http://www.completeunitydeveloper.com/blog/how-to-pan-and-zoom-a-map-in-unity <br>
-[[2][PINCH-ZOOM]] http://www.theappguruz.com/blog/pinch-zoom-panning-unity
+> [[1][ZOOM]] http://www.completeunitydeveloper.com/blog/how-to-pan-and-zoom-a-map-in-unity <br>
+> [[2][PINCH-ZOOM]] http://www.theappguruz.com/blog/pinch-zoom-panning-unity
 
 [ZOOM]: http://www.completeunitydeveloper.com/blog/how-to-pan-and-zoom-a-map-in-unity
 [PINCH-ZOOM]: http://www.theappguruz.com/blog/pinch-zoom-panning-unity

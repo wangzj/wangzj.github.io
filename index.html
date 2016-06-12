@@ -6,8 +6,15 @@ layout: default
 
 <div class="content-wrapper">
 
-  <div id="main-content">
-    {% include postlist.html %}
+  <div class="post-list">
+  {% for post in site.posts %}
+    <div class="post">
+      <span class="post-date">{{ post.date | date: "%d %B %Y" }}</span>
+      <h1 class="post-link"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+      <div class="post-info">{{ post.excerpt }}</div>
+      <a href="{{ post.url }}"><em>Read more</em></a>
+    </div>
+  {% endfor %}
   </div>
 
   {% include sidebar.html %}

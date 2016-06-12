@@ -4,18 +4,6 @@ layout: default
 
 {% include header.html %}
 
-<div class="meta-wrapper" style="background-image: url({{ site.baseurl }}/images/{% if page.imageuri %}{{ page.imageuri }}{% else %}cover.jpg{% endif %});background-position: 0px -350px;height: 200px;">
-  <div class="post-meta">
-    <h1 class="post-title">{{ page.title }}</h1>
-    {% if page.description %}
-      <h2 class="post-description">{{ page.abstraction }}</h2>
-    {% endif %}
-    <span class="post-date">
-      {{ page.categories }} | {{ page.date | date: "%d %B %Y" }}
-    </span>
-  </div>
-</div>
-
 <div class="content-wrapper">
   <div class="post-wrapper">
     {{ content }}

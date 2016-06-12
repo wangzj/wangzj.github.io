@@ -1,5 +1,3 @@
 # wangzj.github.io
 
-## todo list
-
-* pagination
+In which i take stock of what i have done and what i am doing.

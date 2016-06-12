@@ -1,5 +1,11 @@
-<header class="header-wrapper" style="background: url({{ site.baseurl }}/images/{% if page.imageuri %}{{ page.imageuri }}{% else %}cover.jpg{% endif %});width:100%;height:350px;">
+{% if page.image.feature and page.image.feature != "" %}
+  {% assign imageuri = page.image.feature %}
+{% else %}
+  {% assign imageuri = "front_cover.jpg" %}
+{% endif %}
 
+<header class="header-wrapper" style="background: url({{ site.baseurl }}/images/{{ imageuri }});width:100%;height:550px;">
+  <!-- menu content -->
   <label class="menu" for="_1">
     <span class="genericon genericon-menu"></span>
   </label>
@@ -19,5 +25,31 @@
     <a href="#" class="social-links-menu" target="_blank" title="Me adicione ao google+"><span class="genericon genericon-googleplus-alt"></span></a>
     <a href="#" class="social-links-menu" target="_blank" title="Inscreva-se no meu feed"><span class="genericon genericon-feed"></span></a>
   </div>
+
+  <!-- meta content -->
+  {% if page.id %}
+  <div class="post-meta-content container-fluid">
+    <div class="row-fluid">
+      <div class="col-xs-3 col-md-2"></div>
+      <div class="col-xs-12 col-md-8">
+          <h1 class="post-title">{{ page.title }}</h1>
+          {% if page.description %}
+          <h2 class="post-description">{{ page.abstraction }}</h2>
+          {% endif %}
+          <span class="post-date">{{ page.category }} | {{ page.date | date: "%d %B %Y" }}</span>
+      </div>
+    </div>
+  </div>
+  {% else %}
+  <div class="meta-content container-fluid">
+    <div class="row-fluid">
+      <div class="col-xs-3 col-md-2"></div>
+      <div class="col-xs-12 col-md-8">
+        <h1>Simple, Clear and Logical</h1>
+        <p>In which i take stock of what i have done and what i am doing.</p>
+      </div>
+    </div>
+  </div>
+  {% endif %}
 
 </header>

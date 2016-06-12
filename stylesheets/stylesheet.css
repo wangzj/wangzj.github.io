@@ -133,6 +133,30 @@ a:hover {
     opacity: 1;
 }
 
+.meta-content {
+    display: table;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+.meta-content .row-fluid {
+    display: table-cell;
+    vertical-align: middle;
+}
+.meta-content .row-fluid h1 {
+    text-align: center;
+}
+.meta-content .row-fluid p {
+    text-align: center;
+    font-size: 21px;
+}
+
+.post-meta-content {
+    padding-top: 400px;
+    padding-left: 74px;
+    color: white;
+}
+
 /* #Media Queries
  =================================== */
 @media only screen and (min-width: 900px) {
