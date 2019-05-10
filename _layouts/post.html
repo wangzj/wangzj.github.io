@@ -2,21 +2,25 @@
 layout: default
 ---
 
-{% include header.html %}
+<div class="main-wrapper">
+	{% include post-header.html %}
 
-<div class="content-wrapper">
-  <div class="post-wrapper">
-    {{ content }}
-  </div>
+	<div class="content-wrapper container-fluid">
+	  <div class="post-wrapper">
+	    {{ content }}
+	  </div>
 
-  <div class="comments-wrapper">
-    <div id="disqus_thread"></div>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
+	  <!-- <div class="comments-wrapper">
+	    <div id="disqus_thread"></div>
+	    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	  </div> -->
 
+	  <div id="comments"></div>
+
+	</div>
 </div>
-
 {% include footer.html %}
 
-{% include disqus.html %}
+<!-- {% include disqus.html %} -->
+{% include valine.html %}

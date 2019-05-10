@@ -1,13 +1,22 @@
 # Site settings
-title: Simple, Clear and Logical
+title: Janz' Blog
 email: rwangzj@live.com
-description: In which i take stock of what i have done and what i am doing.
+description: One thorn of experience is worth a whole wilderness of warning.
 baseurl: ""
-url: http://wangzj.github.io
+url: https://wangzj.github.io
 twitter_username: nil
 github_username: wangzj
-owner:
-  disqus_shortname: fixedpoint
+# owner:
+#   disqus_shortname: fixedpoint
+
+valine:
+  enable: true
+  appid: 0WjzvHTbFLYI4eAKrgbWTlf0-gzGzoHsz
+  appkey: 8jNNbjVSa2w4jM9KtN4CejbT
+  # verify: true # 验证码
+  # notify: true # 评论回复邮箱提醒
+  # avatar: mp # 匿名者头像选项
+  placeholder: Just go go!
 
 # Build settings
 markdown: kramdown

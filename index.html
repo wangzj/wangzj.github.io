@@ -1,24 +1,28 @@
 ---
 layout: default
+image:
+  feature: timg.jpeg
 ---
 
-{% include header.html %}
+<div class="main-wrapper">
+  {% include header.html %}
 
-<div class="content-wrapper">
+  <div class="content-wrapper">
 
-  <div class="post-list">
-  {% for post in site.posts %}
-    <div class="post">
-      <span class="post-date">{{ post.date | date: "%d %B %Y" }}</span>
-      <h1 class="post-link"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-      <div class="post-info">{{ post.excerpt }}</div>
-      <a href="{{ post.url }}"><em>Read more</em></a>
+    <div class="post-list">
+    {% for post in site.posts %}
+      <div class="post">
+        <span class="post-date">{{ post.date | date: "%d %B %Y" }}</span>
+        <h2 class="post-link"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        <div class="post-info">{{ post.excerpt | truncatewords: 15 }}</div> <!-- strip_html -->
+        <a href="{{ post.url }}"><em>Read more</em></a>
+      </div>
+    {% endfor %}
     </div>
-  {% endfor %}
+
+    {% include sidebar.html %}
+
   </div>
-
-  {% include sidebar.html %}
-
 </div>
 
 {% include footer.html %}

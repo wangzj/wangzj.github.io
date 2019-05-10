@@ -4,27 +4,8 @@
   {% assign imageuri = "front_cover.jpg" %}
 {% endif %}
 
-<header class="header-wrapper" style="background: url({{ site.baseurl }}/images/{{ imageuri }});width:100%;height:550px;">
-  <!-- menu content -->
-  <label class="menu" for="_1">
-    <span class="genericon genericon-menu"></span>
-  </label>
-  <input id="_1" type="checkbox">
-
-  <div class="menu-content">
-    <p class="menu-title"><p>
-    <div class="menu" style="background-color: #1a1a1a; z-index: -1;"></div>
-
-    <a href="/">Home</a>
-    <a href="/about.html">About</a>
-    
-    <hr>
-
-    <a href="#" class="social-links-menu" target="_blank" title="Siga-me no twitter"><span class="genericon genericon-twitter"></span></a>
-    <a href="https://github.com/wangzj" class="social-links-menu" target="_blank" title="Acesse meu github"><span class="genericon genericon-github"></span></a>
-    <a href="#" class="social-links-menu" target="_blank" title="Me adicione ao google+"><span class="genericon genericon-googleplus-alt"></span></a>
-    <a href="#" class="social-links-menu" target="_blank" title="Inscreva-se no meu feed"><span class="genericon genericon-feed"></span></a>
-  </div>
+<header class="header-wrapper" style="background: url({{ site.baseurl }}/images/{{ imageuri }}) no-repeat;background-size: cover;width:100%;height:550px;">
+  {% include menu.html %}
 
   <!-- meta content -->
   {% if page.id %}
@@ -45,8 +26,8 @@
     <div class="row-fluid">
       <div class="col-xs-3 col-md-2"></div>
       <div class="col-xs-12 col-md-8">
-        <h1>Simple, Clear and Logical</h1>
-        <p>In which i take stock of what i have done and what i am doing.</p>
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
       </div>
     </div>
   </div>

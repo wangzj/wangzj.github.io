@@ -10,6 +10,8 @@ html {
 
 body {
     margin: 0;
+    height: 100%;
+    position: relative;
 }
 
 /* Links
@@ -28,6 +30,18 @@ a {
 
 a:active,
 a:hover {
+}
+
+/**************************************
+ *              main                  *
+ **************************************/
+.main-wrapper {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    margin: auto;
+    overflow:hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 60px;
 }
 
 /**************************************
@@ -72,12 +86,12 @@ a:hover {
     cursor: pointer;
     background-color: rgba(26, 26, 26, 0.35);
     box-sizing: content-box;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 28px;
     top: 12px;
     left: 12px;
-    padding-top: 5px;
-    padding-left: 5px;
+    padding-top: 3px;
+    padding-left: 2px;
     z-index: 6;
     transition-duration: .5s;
 }
@@ -152,6 +166,13 @@ a:hover {
     color: white;
 }
 
+.post-meta-content-v2 {
+    padding-top: 130px;
+    width: 720px;
+    /*margin: auto;*/
+    /*padding-left: 74px;*/
+}
+
 /* #Media Queries
  =================================== */
 @media only screen and (min-width: 900px) {
@@ -187,7 +208,7 @@ a:hover {
  **************************************/
 
 .content-wrapper {
-    width: 700px;
+    width: 720px;
     margin: auto;
 }
 
@@ -224,14 +245,22 @@ a:hover {
  **************************************/
 
 .footer-wrapper {
-    //background-image: url(../images/cover.jpg);
-    //background-position: 0px -350px;
-    //height: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 30px;
+    color: #BBC7CC;
+    padding: 0.5rem 15px;
+}
+
+.footer-wrapper a {
+    text-decoration:none;
 }
 
 .footer-wrapper .copyright {
     color: #555555;
     text-align: center;
+    /*min-height: 60px;*/
 }
 
 /**************************************
@@ -247,7 +276,7 @@ a:hover {
 }
 
 .meta-wrapper .post-meta {
-    width: 700px;
+    width: 720px;
     margin: auto;
 }
 
